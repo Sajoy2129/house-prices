@@ -8,9 +8,10 @@ A learning project for exploring the California Housing dataset and predicting h
 
 ## Notebook
 
-`explore.ipynb` is written as a tutorial in numbered sections. So far: 1. load the data, 2. `describe()`, 3. show all columns and print `data.DESCR`, 4. check for missing values, 5. histogram of `MedHouseVal`.
+`explore.ipynb` is written as a report in numbered sections, read top to bottom. Sections 1 to 5 get to know the data (load, `describe()`, `data.DESCR`, missing values, histogram of `MedHouseVal`). Sections 6 to 9 each answer one question about price (correlation, income scatter, map coloured by price, rooms scatter). Section 10 is a summary of findings; update it when a new section adds one.
 
-- Every code cell is preceded by a markdown cell that explains, for a beginner, what the code does and what to look for in the output, with new terms in bold. Keep this pattern when adding sections.
+- All imports live in the first code cell.
+- Every code cell is preceded by a markdown cell that explains, for a beginner, what the code does and what to look for in the output, with new terms in bold. Question sections use the question as the heading and end the markdown cell with a `**Finding:**` line. Keep this pattern when adding sections.
 - Cells share state from top to bottom: `data` and `df` come from section 1, and section 3 sets `display.max_columns` to `None` for the rest of the notebook.
 - Plots use the matplotlib object-oriented style (`fig, ax = plt.subplots(...)`, then `ax.` methods) with a title and axis labels that include units.
 - The file stores plot outputs as embedded PNGs, so the raw JSON is large. Edit cells with the notebook tools instead of rewriting the file as text.
