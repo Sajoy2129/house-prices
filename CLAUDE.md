@@ -25,7 +25,7 @@ Sections 1 to 5 get to know the data (load, `describe()`, `data.DESCR`, missing 
 
 ### `model.ipynb`
 
-Sections 1 to 3 prepare the data: load, split columns into `X` (8 features) and `y` (`MedHouseVal`), then split rows 80/20 into `X_train`, `X_test`, `y_train`, `y_test` with `random_state=42`. Sections 4 to 6 each train one model and score it with mean absolute error (MAE) on the test set. Section 7 is a results table, section 8 checks for overfitting, and section 9 predicts the price for a made-up neighbourhood typed into a dictionary.
+Sections 1 to 3 prepare the data: load, split columns into `X` (8 features) and `y` (`MedHouseVal`), then split rows 80/20 into `X_train`, `X_test`, `y_train`, `y_test` with `random_state=42`. Sections 4 to 6 each train one model and score it with mean absolute error (MAE) on the test set. Section 7 is a results table, section 8 checks for overfitting, section 9 predicts the price for a made-up neighbourhood typed into a dictionary, and section 10 charts the random forest's feature importance and compares its ranking with the correlations from `explore.ipynb`. Section 11 is a summary (which model won, by how much, whether it overfits); keep it as the last cell, insert new sections before it, and update it when a result changes.
 
 | Model | Variable | Test MAE | Training MAE |
 |---|---|---|---|
